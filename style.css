@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;600;700&display=swap');
+
+*:root{
+--main-font:'Yanone Kaffeesatz', sans-serif;
+--dark-gray:#383838;
+--light-gray: #F2F2F2;
+--medium-gray: #dfdfdf;
+--title-one:#D9FFA4;
+--title-two: #F3A7F2;
+--border: #fa77fa;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: var(--main-font);
+    background-color: var(--light-gray);
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+ol, ul, li {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+button{
+    border-style: none;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 20px;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--light-gray);
+    background-color: var(--dark-gray);
+    cursor: pointer;
+    box-shadow: 0px 10px 13px -7px #686868, 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+
+.btn-mobile {
+    display: none;
+}
+
+.about p {
+    word-break: break-word;
+    width: 70%;
+    line-height: 2rem;
+    margin: 0;
+}
+
+.nav-menu {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: .5rem;
+    margin: 0 1.5rem 0 0;
+}
+
+.menu a {
+    display: block; /* para poder definir um padding */
+    padding: .5rem;
+    color: var(--light-gray);
+    text-transform: uppercase;
+}
+
+.menu-item:hover {
+    background-color: #F3A7F2;
+    transition: 0.5s;
+}
+
+.menu-item a:hover{
+    color: var(--dark-gray);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-gray);
+}
+
+.logo {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--title-one);
+    margin: 1rem;
+    font-size: 1.8rem;
+}
+
+
+.title {
+    color: var(--title-two);
+    margin: 1rem;
+}
+
+.container{
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem;
+
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    background-image: url(imagens/avatar2.jpg);
+    height: 20rem;
+    width: 20rem;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+/* .icon-menu {
+    background-image:url(imagens/pngfind.com-left-png-5173378.png);
+    background-color: #F3A7F2;
+    height: 5rem;
+    width: 5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    border-radius: 50%;
+    transform: translateY(-50px);
+    cursor: pointer;
+} */
+
+.social-medias {
+    width: 20%;
+}
+
+.social-medias ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+
+}
+ 
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+#hobbies-soft {
+    background-color: var(--dark-gray);
+    padding-top: 5rem;
+}
+
+#hobbie {
+    color: var(--title-one);
+    margin: 0;
+}
+
+#hobbies-soft ul {
+    color: var(--light-gray);
+    display: flex;
+    width: 70%;
+    height: 5rem;
+    justify-content: space-around;
+    list-style-type: disc;
+}
+
+#formacao_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+    justify-content: space-around;
+    list-style-type: disc;
+    margin: 6rem;
+}
+
+#formacao{
+    display: flex;
+    justify-content: center;
+    background-color: var(--medium-gray);
+}
+
+.formacao_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+}
+
+#soft {
+    color: var(--title-two);
+    margin: 0;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem
+}
+
+#formacao_title {
+    color: var(--title-two);
+}
+
+.img_formacao {
+    width: 20rem;
+    
+}
+
+#ufsc {
+    width: 10rem;
+}
+
+.experience__img {
+    width: 60%;
+}
+
+.experiencie__box {
+    display: flex;
+    margin: 1.5rem;
+}
+
+.experience__info {
+    margin: 1rem;
+}
+
+#projetos{
+    box-sizing: border-box;
+}
+
+#project_title {
+    color: var(--title-two);
+}
+
+#contato {
+    background-color: var(--dark-gray);
+}
+
+#contact_title {
+    color: var(--title-one);
+}
+
+.footer {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 0;
+}
+
+input {
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 30rem;
+    height: 2rem;
+}
+
+textarea {
+    font-family: var(--main-font);
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 30rem;
+    height: 10rem;
+}
+
+#btn-demo, #btn-repo {
+   color: var(--title-one);
+}
+
+#btn-repo:hover {
+    background-color:var(--title-one);
+    color: var(--dark-gray);
+    transition: 0.5s;
+}
+
+#btn-demo:hover {
+    background-color:var(--title-one);
+    color: var(--dark-gray);
+    transition: 0.5s;
+}
+
+#btn-send {
+    background-color: #F3A7F2;
+    color: #383838;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.6rem;
+    box-shadow: 0px 10px 13px -7px #030303, 5px 5px 15px 5px rgba(39, 36, 36, 0);
+    margin-left: auto;
+}
+
+@media screen and (min-width: 320px) and (max-width:768px) {
+    
+    .avatar {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .social-medias {
+        width: 60%;
+    }
+
+    .social-medias ul {
+        flex-direction: row;
+    }
+
+    .about {
+        margin: 1rem;
+    }
+
+    .about p {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    body {
+        font-size: 1.6rem;
+    }
+
+    #hobbies-soft ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #formacao {
+        margin: 0 3rem 0;
+    }
+
+    .formacao_box {
+        max-width: 50%;
+    }
+
+    .experience__img {
+        display: none;
+    }
+
+    .experience__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #project_title {
+        margin: 0;
+    }
+
+    #contact_title {
+        text-align: center;
+    }
+
+    input, textarea{
+        max-width: 70%;
+    }
+
+    .contato-form {
+        align-items: center;
+    }
+
+    #btn-send {
+        margin: auto;
+        height: 2.2rem;
+        font-size: 1.4rem;
+    }
+
+    .btn-mobile {
+        display: block;
+        border-radius: 0;
+        box-shadow: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-size: 1.7rem;
+        font-weight: 600;
+
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 6rem;
+        right: 0px;
+        background-color: var(--dark-gray);
+        font-size: 1.5rem;
+        height: calc(100vh - 6rem);
+        z-index: 1000;
+        text-align: center;
+        
+    }
+
+}
+
+.menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 1px solid var(--medium-gray);
+}
+
+
+.nav-menu.active .menu {
+    display: block;
+}
